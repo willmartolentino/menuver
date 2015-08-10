@@ -1,0 +1,90 @@
+.menuver-wrapper {
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+    overflow: visible;
+}
+
+.menuver, .menuver:visited {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url('../../img/eyeglasses-2.png') #870038 center 60% no-repeat;
+    color: #002461;
+    border: 1px solid transparent;
+    text-indent: -9999px;
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.menuver:hover, .menuver-content.show + .menuver {
+    background-image: url('../../img/eyeglasses.png');
+    background-color: #FEE92F;
+    border-color: #870038;
+}
+
+.menuver-content {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: none;
+    background-color: #FEE92F;
+    border: 1px solid #870038;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-style: italic;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.menuver-content:before,
+.menuver-content:after {
+    position: absolute;
+    display: block;
+    content: ' ';
+    border-style: solid;
+}
+
+.menuver-content:before {
+    right: 20px;
+    bottom: -20px;
+    border-width: 10px;
+    border-color: #FEE92F transparent transparent transparent;
+}
+
+.menuver-content:after {
+    right: 15px;
+    bottom: -27px;
+    border-width: 15px;
+    border-color: #870038 transparent transparent transparent;
+    z-index: -1;
+}
+
+.menuver-content h1 {
+    margin-top: 0;
+    padding-bottom: 3px;
+    color: #870038;
+    border-bottom: 1px dashed #B22B63;
+}
+
+.menuver-link, .menuver-link:visited, .menuver-content > a {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    color: #641415;
+    text-decoration: none;
+}
+
+.menuver-link:hover { text-decoration: underline; }
+
+
